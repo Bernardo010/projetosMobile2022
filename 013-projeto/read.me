@@ -1,0 +1,30 @@
+import { StatusBar } from 'expo-status-bar';
+import { TextInput, StyleSheet, Text, View } from 'react-native';
+
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <TextInput style={styles.input} value="Texto padrao" />
+      <TextInput style={styles.input} placeholder="texto substituido" />
+      <TextInput style={styles.input} secureTextEntry={true}/>
+      <TextInput style={styles.input} Disabled={true} />
+
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  input: {
+    height: 40,
+    margin: 12,
+    borderwhrit: "red",
+    padding: 10,
+  },
+});
